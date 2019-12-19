@@ -1,13 +1,11 @@
-// This file creates the database tables for male names and female names using the lists from the .txt files NAMES-F and NAMES-M
-
 var axios = require("axios");
 var fs = require("fs");
 
 var raceResults = "raceResults.txt"
 
-function resultsToArray(names) {
+function resultsToArray(results) {
   try {
-    var data = fs.readFileSync(names, "utf8");
+    var data = fs.readFileSync(results, "utf8");
     // console.log(data);
   } catch (e) {
     console.log("Error:", e.stack);
@@ -23,7 +21,7 @@ var i = 0;
 finalResults = newRaceResults.map(result => {
     return result.split(" ");
 })
-console.log(finalResults);
+// console.log(finalResults);
 
 
 addResult = async result => {
