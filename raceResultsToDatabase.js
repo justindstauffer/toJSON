@@ -24,12 +24,6 @@ finalResults = newRaceResults.map(result => {
     return result.split(" ");
 })
 console.log(finalResults);
-// function resultsToArray2() {
-//   var data = newRaceResults.split(" ");
-//   return data;
-// }
-// var testResults = resultsToArray2();
-// console.log(testResults);
 
 
 addResult = async result => {
